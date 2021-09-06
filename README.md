@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Auteur:
-Sanne 't Hooft (vervangen door jouw naam)
+Michael Wilhelm
 
 #### Je startniveau:
-hier je startniveau (kies uit zwart, rood óf blauw)
+Rood
 
 #### Je focus:
-hier je focus (kies uit responsive óf surface plane)
+Surface plane
  
 </details>
 
@@ -36,15 +36,15 @@ hier je focus (kies uit responsive óf surface plane)
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+https://biggym.nl
 
 #### Screenshot(s) van de eerste pagina (small screen): 
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Homepage 
+<img src="images/homepage.png" width="375px" alt="De homepage van de site van Big Gym met abonnementen, voordelen,openingstijden en een promofilm">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Klantenservice 
+<img src="images/klantenservice.png" width="375px" alt="De klantenservice met veelgestelde vragen, een search bar en hulp bot">
  
 </details>
 
