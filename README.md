@@ -33,10 +33,13 @@ https://biggym.nl
 <img src="images/homepage.png" width="375px" alt="De homepage van de site van Big Gym met abonnementen, voordelen,openingstijden en een promofilm">
 <img src="images/voordelen.png" width="375px" alt="lijst met voordelen">
 <img src="images/promofilm.png" width="375px" alt="een knop naar de promofilm">
+<img src="images/smallhomescreen.jpg" width="375px" alt="homescreen">
+<img src="images/smallhomescreen2.jpg" width="375px" alt="homescreen">
 
 #### Screenshot(s) van de tweede pagina (small screen): Klantenservice
 
 <img src="images/klantenservice.png" width="375px" alt="De klantenservice met veelgestelde vragen, een search bar en hulp bot">
+<img src="images/smallklantenservice.jpg" width="375px" alt="klantenservice pagina">
  
 </details>
 
