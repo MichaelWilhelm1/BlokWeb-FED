@@ -1,5 +1,185 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
+:root {
+  --main-color: black;
+  --secondary-color: #47A638;
+  --hightlight-color: #D9048E;
+  --tekst-color: white;
+  --background-color: rgb(32, 31, 31);
+  --background-highlight-color: #ffffff;
+
+  --shadow-color: #2F4F4F33;
+}
+
+body {
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: 'Saira', sans-serif;
+  color: var(--main-color);
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-left: 3em;
+  padding-right: 5em;
+  z-index: 1;
+}
+
+/******************/
+/* navigatie */
+/******************/
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12em;
+  height: 5em;
+  padding: .75em 0 .75em 2.75em;
+
+}
+
+header nav {
+
+  flex-grow: 1;
+  font-weight: bold;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 1px;
+  align-items: center;
+}
+
+header nav li {
+  flex-grow: 1;
+  min-width: 6em;
+}
+
+header nav a {
+  text-decoration: none;
+  outline: none;
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 3.5em;
+  text-transform: uppercase;
+}
+
+header nav a.active {
+  font-weight: bold;
+  cursor: default;
+}
+
+header nav a:hover:not(.active) {
+
+  color: var(--hightlight-color);
+}
+
+header nav a:focus {
+  text-decoration: underline;
+}
+
+
+header nav #lid {
+  background-color: var(--secondary-color);
+  text-decoration: none;
+  outline: none;
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 3.5em;
+  text-transform: uppercase;
+}
+
+header nav #lid.active {
+  font-weight: bold;
+  cursor: default;
+}
+
+header nav #lid:hover:not(.active) {
+  background-color: white;
+  color: var(--hightlight-color);
+}
+
+header nav #lid:focus {
+  text-decoration: underline;
+}
+
+
+/******************/
+/* ZOEK FORMULIER */
+/******************/
+header form {
+  padding: .75em;
+  background-color: var(--shadow-color);
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+header form input {
+  width: 0;
+  flex-grow: 1;
+}
+
+input,
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  font: inherit;
+}
+
+header form input {
+  min-width: 12em;
+  max-width: 38em;
+  line-height: 2em;
+  padding: 0 .5em;
+}
+
+header form button {
+  line-height: 2em;
+  padding: 0 .5em;
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+}
+
+/******************/
+/* MAIN */
+/******************/
+
+#abonnementen img:first-of-type {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+
+#abonnementen img:nth-of-type(2) {
+  width: 100%;
+  position: absolute;
+  top: 1em;
+  left: 0;
+
+}
