@@ -53,13 +53,10 @@ https://biggym.nl
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdown.jpg" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="images/navigatiebreakdown.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -73,8 +70,12 @@ https://biggym.nl
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Tot nu toe heb ik de navigatie afgemaakt, alleen voor de small screen moet het nog in een hamburger menu vormen (als het goed is gaan we dat nog leren). En ik heb de banner van de website nagemaakt, wel met een andere foto omdat die van de BigGym niet te vinden is.
 
+Ik had wel moeite met het maken van de navigatie, na een uur deed de navigatie totaal niet wat ik wilde en heb ik het maar verwijderd. Daarna ben ik opnieuw begonnen en was het wel gelukt.
+
+<img src="images/websitescreen.png" width="375px" alt="screenshot van de website">
+<img src="images/codescreen.png" width="375px" alt="screenshot van de code">
 
 ### Agenda voor meeting
 samen met je groepje opstellen
