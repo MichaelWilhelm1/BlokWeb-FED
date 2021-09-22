@@ -10,14 +10,16 @@
   --secondary-color: #47A638;
   --hightlight-color: #D9048E;
   --tekst-color: white;
-  --background-color: rgb(32, 31, 31);
+  --background-color: black;
   --background-highlight-color: #ffffff;
+
 
   --shadow-color: #2F4F4F33;
 }
 
 body {
   margin: 0;
+  padding: 0;
   background-color: var(--background-color);
   font-family: 'Saira', sans-serif;
   color: var(--main-color);
@@ -40,23 +42,32 @@ header {
 }
 
 /******************/
+/* typografie */
+/******************/
+
+h3 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+/******************/
 /* navigatie */
 /******************/
 
-#logo {
+header nav ul li a img:first-of-type {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 12em;
   height: 5em;
   padding: .75em 0 .75em 2.75em;
-
 }
 
 header nav {
 
   flex-grow: 1;
   font-weight: bold;
+
 }
 
 header nav ul {
@@ -76,7 +87,7 @@ header nav li {
 header nav a {
   text-decoration: none;
   outline: none;
-  color: white;
+  color: var(--tekst-color);
   display: block;
   text-align: center;
   line-height: 3.5em;
@@ -102,7 +113,7 @@ header nav #lid {
   background-color: var(--secondary-color);
   text-decoration: none;
   outline: none;
-  color: white;
+  color: var(--tekst-color);
   display: block;
   text-align: center;
   line-height: 3.5em;
@@ -123,6 +134,70 @@ header nav #lid:focus {
   text-decoration: underline;
 }
 
+/******************/
+/* HAMBURGERMENU */
+/******************/
+
+.toggle-button {
+  position: fixed;
+  top: .75rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 32px;
+  background-color: var(--hightlight-color);
+
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/******************/
+/* HAMBURGERMENU code wanneer die verandert
+Bron: https: //www.youtube.com/watch?v=At4B7A4GOPg */
+/******************/
+
+@media (max-width: 1155px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--main-color);
+    position: absolute;
+    right: 0;
+  }
+
+  .toggle-button {
+    display: flex;
+    border: 2px solid var(--hightlight-color);
+  }
+
+  .links {
+    display: none;
+    width: 100%;
+  }
+
+  .links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .links ul li {
+    text-align: left;
+    border-bottom: 1px solid var(--hightlight-color);
+  }
+
+  .links ul li a {
+    padding: .5rem 1rem;
+  }
+
+
+}
 
 /******************/
 /* ZOEK FORMULIER */
@@ -167,7 +242,18 @@ header form button {
 /* MAIN */
 /******************/
 
-#abonnementen img:first-of-type {
+main {
+  color: var(--tekst-color);
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+/******************/
+/* Eerste Section */
+/******************/
+
+main section:first-of-type img:first-of-type {
   position: sticky;
   left: 0;
   right: 0;
@@ -176,10 +262,280 @@ header form button {
   z-index: -1;
 }
 
-#abonnementen img:nth-of-type(2) {
+main section:first-of-type img:nth-of-type(2) {
   width: 100%;
   position: absolute;
   top: 1em;
   left: 0;
 
+}
+
+main section:first-of-type ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-color);
+
+}
+
+main section:first-of-type ul li {
+  margin: 0;
+  padding: 10px;
+  background-color: grey;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+}
+
+main section:first-of-type ul:first-of-type {
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 2em;
+
+}
+
+main section:first-of-type ul li:first-of-type {
+  background-image: url(../images/samen.png);
+  background-size: cover;
+  background-position: center;
+}
+
+main section:first-of-type ul li:first-of-type h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.2em;
+  background-color: var(--hightlight-color);
+  text-align: center;
+
+}
+
+main section:first-of-type ul li:nth-of-type(2) {
+  background-image: url(../images/onbeperkt.jpeg);
+  background-size: cover;
+  background-position: center;
+  border: solid green 0.2em;
+  position: relative;
+  overflow: hidden;
+}
+
+main section:first-of-type ul li:nth-of-type(2) h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.2em;
+  background-color: var(--main-color);
+  text-align: center;
+
+}
+
+main section:first-of-type ul li:nth-of-type(2) h4 {
+  position: absolute;
+  right: -4.7em;
+  top: 2em;
+  width: 15em;
+  margin: 0;
+  transform: rotate(45deg);
+  line-height: 1.5em;
+  text-align: center;
+  background-color: green;
+  font-size: 0.8em;
+}
+
+main section:first-of-type ul li:nth-of-type(3) {
+  background-image: url(../images/daluren.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+main section:first-of-type ul li:nth-of-type(3) h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.2em;
+  background-color: #FFEA3D;
+  text-align: center;
+  color: var(--main-color);
+}
+
+main section:first-of-type ul li:nth-of-type(4) {
+  background-image: url(../images/flexibel.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+main section:first-of-type ul li:nth-of-type(4) h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.2em;
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+main section:first-of-type ul li:last-of-type {
+  background-image: url(../images/kids.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+main section:first-of-type ul li:last-of-type h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.2em;
+  background-color: #00B8F1;
+  text-align: center;
+}
+
+main section:first-of-type ul li p {
+  position: absolute;
+  background-color: #F48EBC;
+  left: 0;
+  right: 0;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+}
+
+main section:first-of-type ul li h5 {
+  position: absolute;
+  left: 0;
+  top: -0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  padding: 5px;
+}
+
+main section:first-of-type ul li:first-of-type h5 {
+  background-color: var(--hightlight-color);
+}
+
+main section:first-of-type ul li:nth-of-type(2) h5 {
+  background-color: var(--main-color);
+}
+
+main section:first-of-type ul li:nth-of-type(3) h5 {
+  background-color: #FFEA3D;
+  color: var(--main-color);
+}
+
+main section:first-of-type ul li:nth-of-type(4) h5 {
+  background-color: var(--secondary-color);
+}
+
+main section:first-of-type ul li:last-of-type h5 {
+  background-color: #00B8F1;
+}
+
+main section:first-of-type button {
+  background-color: var(--secondary-color);
+  color: var(--tekst-color);
+  line-height: 3.5em;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0.5em;
+}
+
+main section:first-of-type button:hover {
+  background-color: var(--hightlight-color);
+  color: var(--tekst-color);
+  transition: 1s;
+}
+
+/******************/
+/* Tweede Section */
+/******************/
+
+section:nth-of-type(2) {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1em;
+  background-color: #1D1D1D;
+}
+
+section:nth-of-type(2) article {
+  position: relative;
+}
+
+section:nth-of-type(2) h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px var(--shadow-color);
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+section:nth-of-type(2) article h3 {
+  font-size: 1em;
+  text-shadow: 2px 2px var(--shadow-color);
+
+}
+
+section:nth-of-type(2) article img {
+  width: 50px;
+  height: auto;
+  margin: 0.5em;
+  position: absolute;
+  right: 0;
+}
+
+section:nth-of-type(2) article div {
+  display: flex;
+}
+
+/******************/
+/* Derde Section */
+/******************/
+
+section:nth-of-type(3) {
+  position: absolute;
+  top: 200%;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 1em;
+  background-image: url(../images/gymzaal.jpeg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section:nth-of-type(3) h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 10px;
+}
+
+section:nth-of-type(3) h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: bold;
 }
