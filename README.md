@@ -9,15 +9,13 @@
 Michael Wilhelm
 
 #### Je startniveau:
-Rood
+Rood en op sommige vlakken blauw
 
 #### Je focus:
-Surface plane
+Was surface plane maar is toch responsive geworden.
+De site is helemaal responsive
  
 </details>
-
-
-
 
 
 ## Je website
@@ -80,20 +78,13 @@ Ik had wel moeite met het maken van de navigatie, na een uur deed de navigatie t
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Michael      | 
+| Of we nog les krijgen in het maken van hamburgermenu's.|                     
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- De navigatie is goed gelukt, probeer alleen minder classes te gebruiken. 
 
 </details>
 
@@ -107,26 +98,27 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor 2e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Ik heb bijna de hele homepage af het enige wat ik nog moet doen is de promovideo toevoegen en een footer maken. Het ging niet helemaal flekkeloos, ik kwam er niet helemaal uit hoe ik de de verschillende abonnementen andere kleuren kon geven op het begin maar na het maken van de huiswerkopdrachten kwam ik er al snel achter. 
+
+<img src="images/codeweek3.png" width="375px" height="auto" alt="screenshot van de code week 3">
+
+Ik heb het gedaan met de hulp van de selectoren first-of-type, nth-of-type en last-of-type.
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Michael      |          
+| Hoe krijg ik de tweede section in het midden van de pagina.| 
+| Hoe verander je de grid van 2 koloms naar 1 kolom|
 
 
 ### Verslag van meeting
 hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- Haal de display flex op de body weg zodat je niet overal position absolute hoeft te plaatsen.
+- Op de tweede-section plaats je een mediaquery om te bepalen wanneer je er 1 kolom van maakt.
+
 
 </details>
 
@@ -137,38 +129,33 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ## Toegankelijkheidstest (week 4)
 
 <details>
-<summary>uitwerken na test in 8e voortgang</summary>
+<summary>toegangelijkheid</summary>
 
 ### Bevindingen
-Lijst met je bevindingen die in de test naar voren kwamen:
+De screenreader werkte goed!
+Perpheral field loss.
+Low Contrast.
+Motoriek.
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Screenreader
+De screenreader werkte goed, er werd goed vermeld dat een link een link was en de tekst werd goed voorgelezen. Alleen bij sommige afbeeldingen werd niet vermeld dat het een knop of link was. 
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Dit kan je in de ALT veranderen door een goede omschrijving te geven.
 
+#### Perpheral field loss 
+Leon (proefpersoon) kon het hele scherm goed zien. Hij had alleen moeite met het kijken in de hoeken van zijn ogen (hij zag alleen voor zich). Maar dit had geen enkele invloed op het kijken naar de website.
 
-#### Titel tweede bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Low contrast
+De grijze tekst op de knop in de footer Vacatures was niet goed te lezen.
+Dit heb ik verandert naar een donkerdere kleur waardoor het goed te lezen is.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+#### Motoriek
+Het was erg moeilijk om te scrollen op de laagste stand van het apparaat, hierdoor was het ook erg moeilijk om op knoppen te drukken. Op de hoogste stand was het vrijwel onmogelijk.
 
-
-#### Titel volgende bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding. 
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Oplossing voor de laagste stand: grotere knoppen en links maken.
+Oplossing voor de hoogste stand: spraakcommando's. Door te zeggen wat de computer moet doen.
 
 </details>
-
-
-
 
 
 ## Voortgang 3 (week 4)
@@ -177,26 +164,25 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 <summary>uitwerken voor 3e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Deze week heb ik de laatste pagina afgemaakt. Het ging best wel goed en veel sneller dan de eerste pagina. Dit komt denk ik doordat je weer bent ingekomen en dat je sommige dingen hebt behandelt die je eigenlijk iets te laat voor de eerste pagina had behandelt.
+
+Het enige waar ik tegen aan liep was het sliden van het chatsysteem. Ik had eerst de chatsysteem gemaakt (niet werkent) en die moest het scherm in en uit sliden, het duurde een tijdje voordat ik er achter kwam hoe dat ookalweer moest.
+
+<img src="images/chatsysteem.png" width="200px" height="auto" alt="screenshot van de chatysyteem">
+<img src="images/chatsysteemcode.png" width="200px" height="auto" alt="screenshot van de code chatsysteem">
 
 
 ### Agenda voor meeting
 samen met je groepje opstellen
 
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| Michael      | 
+| geen vragen het was gelukt voordat het gesprek kwam | 
 
 
 ### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
+- De site zag er goed uit en was goed responsive.
+- Om de aap te laten verdwijnen kan je mediaquery gebruiken net als de navigatie en je bij het chatsysteem doet.
 
 </details>
 
@@ -210,11 +196,20 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Het werken met positions vond ik op het begin best lastig en ik had het ook nog nooit gedaan, maar na een tijdje mee te werken ging het eigenlijk best goed. 
+
+Het werken met media querys ging ook heel goed, dit was ook de eerste keer dat ik hier mee werkte maar het is eigenlijk best simpel. Ik keek via de inspector telkens naar de width van het scherm en op welk moment ik iets zou willen veranderen. Dit heb ik gebruikt voor het hamburgermenu, de voordelen section, de form en img en de chatfunctie.
+
+De links in het navigatiemenu en de buttons op de pagina vormgeven ging erg goed, dit had ik dan ook wel een stuk vaker gedaan dan de rest van de code.
+<img src="images/mquerycode.png" width="100px" height="auto" alt="mediaquery code">
+<img src="images/mquerycode2.png" width="100px" height="auto" alt="mediaquery code">
 
 ### Screenshot(s)
+<img src="images/indexbig.png" width="300px" height="auto" alt="de homepage">
+<img src="images/klantenservicebig.png" width="300px" height="auto" alt="pagina van de klantenservice">
 
-hier screenshot(s) van je eindresultaat
+<img src="images/indexsmall.png" width="200px" height="auto" alt="de homepage mobile version">
+<img src="images/klantenservicesmall.png" width="200px" height="auto" alt="pagina van de klantenservice mobile version">
 
 </details>
 
@@ -227,10 +222,8 @@ hier screenshot(s) van je eindresultaat
 <details open>
 <summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
-
-1. bron 1
-2. bron 2
-3. ...
+1. codepen oefeningen
+2. hamburgermenu: https: //www.youtube.com/watch?v=At4B7A4GOPg
+3. media query: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
 
 </details>

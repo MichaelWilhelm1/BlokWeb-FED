@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
 
-<body>
+<body class="klantenservice">
     <header>
         <nav>
             <a href="#" class="toggle-button">
@@ -19,7 +19,7 @@
             </a>
             <div class="links">
                 <ul>
-                    <li><a href="index.html"><img src="images/biggym-logo.svg" alt="biggym-logo"></a></li>
+                    <li><a href="index.html"><img src="images/biggym-logo.svg" alt="Homebutton"></a></li>
                     <li><a href="#">Gyms</a></li>
                     <li><a href="#">Abonnementen</a></li>
                     <li><a href="#">Actie</a></li>
@@ -33,7 +33,80 @@
     </header>
 
 
-    <main></main>
+    <main>
+        <form role="search" action="#">
+            <input type="search" name="search" id="search" placeholder="Stel je vraag aan de klantenservice"
+                autocomplete="on" aria-label="zoeken">
+            <button type="submit">Zoeken</button>
+            <img src="images/gorilla.png" alt="Gorilla">
+        </form>
+
+        <section>
+            <ul>
+                <li>
+                    <h3>Abonnementen</h3>
+                    <a href="#">Lid worden</a>
+                    <a href="#">Abonnement</a>
+                    <a href="#">Upgraden</a>
+                </li>
+
+                <li>
+                    <h3>Betalingen</h3>
+                    <a href="#">Contributie</a>
+                    <a href="#">Openstaand bedrag</a>
+                    <a href="#">Incasseren</a>
+                </li>
+
+                <li>
+                    <h3>Gyms</h3>
+                    <a href="#">Openingstijden</a>
+                    <a href="#">Vacatures</a>
+                    <a href="#">Locaties</a>
+                </li>
+
+                <li>
+                    <h3>Faciliteiten</h3>
+                    <a href="#">Alle faciliteiten</a>
+                    <a href="#">Apparatuur</a>
+                    <a href="#">Begeleiding</a>
+                </li>
+
+                <li>
+                    <h3>Groepslessen</h3>
+                    <a href="#">Groepsles</a>
+                    <a href="#">Reserveren</a>
+                    <a href="#">Kosten groepslessen</a>
+                </li>
+
+                <li>
+                    <h3>Overige</h3>
+                    <a href="#">Reserveren</a>
+                    <a href="#">Algemeen</a>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </section>
+
+        <img id="chaticoon" src="images/chaticoon.png" alt="chatbutton">
+
+        <section id="chat">
+            <article>
+                <h4><img src="images/biggy.png" alt="biggy">Stel je vraag aan Biggy!</h4>
+                <div>
+                    <h5>Bericht Ons</h5>
+                    <button><img src="images/biggy.png" alt="biggy">Hi, ik ben Biggy, de chatassistent</button>
+                </div>
+                <div>
+                    <h5>Veelgestelde vragen</h5>
+                    <button><img src="images/documentje.png" alt="icoon">Abonnement</button>
+                    <button><img src="images/documentje.png" alt="icoon">Upgraden</button>
+                    <button><img src="images/contributie.png" alt="icoon">Contributie</button>
+                    <button>Toon meer categorieën</button>
+                </div>
+            </article>
+        </section>
+
+    </main>
 
 
     <footer>

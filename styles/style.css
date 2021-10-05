@@ -105,12 +105,7 @@ header nav a {
   text-transform: uppercase;
 }
 
-header nav a.active {
-  font-weight: bold;
-  cursor: default;
-}
-
-header nav a:hover:not(.active) {
+header nav a:hover {
 
   color: var(--hightlight-color);
 }
@@ -118,7 +113,6 @@ header nav a:hover:not(.active) {
 header nav a:focus {
   text-decoration: underline;
 }
-
 
 header nav #lid {
   background-color: var(--secondary-color);
@@ -131,12 +125,7 @@ header nav #lid {
   text-transform: uppercase;
 }
 
-header nav #lid.active {
-  font-weight: bold;
-  cursor: default;
-}
-
-header nav #lid:hover:not(.active) {
+header nav #lid:hover {
   background-color: white;
   color: var(--hightlight-color);
 }
@@ -188,6 +177,10 @@ Bron: https: //www.youtube.com/watch?v=At4B7A4GOPg */
     border: 2px solid var(--hightlight-color);
   }
 
+  .links.active {
+    display: block;
+  }
+
   .links {
     display: none;
     width: 100%;
@@ -211,60 +204,18 @@ Bron: https: //www.youtube.com/watch?v=At4B7A4GOPg */
 }
 
 /******************/
-/* ZOEK FORMULIER */
-/******************/
-header form {
-  padding: .75em;
-  background-color: var(--shadow-color);
-  display: flex;
-  flex-grow: 1;
-  justify-content: flex-end;
-}
-
-header form input {
-  width: 0;
-  flex-grow: 1;
-}
-
-input,
-button {
-  -webkit-appearance: none;
-  appearance: none;
-  border: none;
-  font: inherit;
-}
-
-header form input {
-  min-width: 12em;
-  max-width: 38em;
-  line-height: 2em;
-  padding: 0 .5em;
-}
-
-header form button {
-  line-height: 2em;
-  padding: 0 .5em;
-  background-color: var(--main-color);
-  color: white;
-  cursor: pointer;
-}
-
-/******************/
 /* MAIN */
 /******************/
 
 main {
   color: var(--tekst-color);
-
-  justify-content: center;
-  position: relative;
 }
 
 /******************/
 /* Eerste Section */
 /******************/
 
-main section:first-of-type img:first-of-type {
+.index main section:first-of-type img:first-of-type {
   position: sticky;
   left: 0;
   right: 0;
@@ -273,7 +224,7 @@ main section:first-of-type img:first-of-type {
   z-index: -1;
 }
 
-main section:first-of-type img:nth-of-type(2) {
+.index main section:first-of-type img:nth-of-type(2) {
   width: 100%;
   position: absolute;
   top: 1em;
@@ -281,7 +232,7 @@ main section:first-of-type img:nth-of-type(2) {
 
 }
 
-main section:first-of-type ul {
+.index main section:first-of-type ul {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -291,7 +242,7 @@ main section:first-of-type ul {
 
 }
 
-main section:first-of-type ul li {
+.index main section:first-of-type ul li {
   margin: 0;
   padding: 10px;
   background-color: grey;
@@ -302,7 +253,7 @@ main section:first-of-type ul li {
 
 }
 
-main section:first-of-type ul:first-of-type {
+.index main section:first-of-type ul:first-of-type {
   width: 100%;
   margin: 0;
   padding: 1em;
@@ -312,13 +263,13 @@ main section:first-of-type ul:first-of-type {
 
 }
 
-main section:first-of-type ul li:first-of-type {
+.index main section:first-of-type ul li:first-of-type {
   background-image: url(../images/samen.png);
   background-size: cover;
   background-position: center;
 }
 
-main section:first-of-type ul li:first-of-type h3 {
+.index main section:first-of-type ul li:first-of-type h3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -330,7 +281,7 @@ main section:first-of-type ul li:first-of-type h3 {
 
 }
 
-main section:first-of-type ul li:nth-of-type(2) {
+.index main section:first-of-type ul li:nth-of-type(2) {
   background-image: url(../images/onbeperkt.jpeg);
   background-size: cover;
   background-position: center;
@@ -339,7 +290,7 @@ main section:first-of-type ul li:nth-of-type(2) {
   overflow: hidden;
 }
 
-main section:first-of-type ul li:nth-of-type(2) h3 {
+.index main section:first-of-type ul li:nth-of-type(2) h3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -351,7 +302,7 @@ main section:first-of-type ul li:nth-of-type(2) h3 {
 
 }
 
-main section:first-of-type ul li:nth-of-type(2) h4 {
+.index main section:first-of-type ul li:nth-of-type(2) h4 {
   position: absolute;
   right: -4.7em;
   top: 2em;
@@ -364,13 +315,13 @@ main section:first-of-type ul li:nth-of-type(2) h4 {
   font-size: 0.8em;
 }
 
-main section:first-of-type ul li:nth-of-type(3) {
+.index main section:first-of-type ul li:nth-of-type(3) {
   background-image: url(../images/daluren.jpeg);
   background-size: cover;
   background-position: center;
 }
 
-main section:first-of-type ul li:nth-of-type(3) h3 {
+.index main section:first-of-type ul li:nth-of-type(3) h3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -382,13 +333,13 @@ main section:first-of-type ul li:nth-of-type(3) h3 {
   color: var(--main-color);
 }
 
-main section:first-of-type ul li:nth-of-type(4) {
+.index main section:first-of-type ul li:nth-of-type(4) {
   background-image: url(../images/flexibel.jpeg);
   background-size: cover;
   background-position: center;
 }
 
-main section:first-of-type ul li:nth-of-type(4) h3 {
+.index main section:first-of-type ul li:nth-of-type(4) h3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -399,13 +350,13 @@ main section:first-of-type ul li:nth-of-type(4) h3 {
   text-align: center;
 }
 
-main section:first-of-type ul li:last-of-type {
+.index main section:first-of-type ul li:last-of-type {
   background-image: url(../images/kids.jpeg);
   background-size: cover;
   background-position: center;
 }
 
-main section:first-of-type ul li:last-of-type h3 {
+.index main section:first-of-type ul li:last-of-type h3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -416,7 +367,7 @@ main section:first-of-type ul li:last-of-type h3 {
   text-align: center;
 }
 
-main section:first-of-type ul li p {
+.index main section:first-of-type ul li p {
   position: absolute;
   background-color: #F48EBC;
   left: 0;
@@ -426,7 +377,7 @@ main section:first-of-type ul li p {
   justify-content: center;
 }
 
-main section:first-of-type ul li h5 {
+.index main section:first-of-type ul li h5 {
   position: absolute;
   left: 0;
   top: -0.8em;
@@ -437,28 +388,32 @@ main section:first-of-type ul li h5 {
   padding: 5px;
 }
 
-main section:first-of-type ul li:first-of-type h5 {
+/* prijzen */
+
+.index main section:first-of-type ul li:first-of-type h5 {
   background-color: var(--hightlight-color);
 }
 
-main section:first-of-type ul li:nth-of-type(2) h5 {
+.index main section:first-of-type ul li:nth-of-type(2) h5 {
   background-color: var(--main-color);
 }
 
-main section:first-of-type ul li:nth-of-type(3) h5 {
+.index main section:first-of-type ul li:nth-of-type(3) h5 {
   background-color: #FFEA3D;
   color: var(--main-color);
 }
 
-main section:first-of-type ul li:nth-of-type(4) h5 {
+.index main section:first-of-type ul li:nth-of-type(4) h5 {
   background-color: var(--secondary-color);
 }
 
-main section:first-of-type ul li:last-of-type h5 {
+.index main section:first-of-type ul li:last-of-type h5 {
   background-color: #00B8F1;
 }
 
-main section:first-of-type button {
+/* button */
+
+.index main section:first-of-type button {
   background-color: var(--secondary-color);
   color: var(--tekst-color);
   line-height: 3.5em;
@@ -467,7 +422,7 @@ main section:first-of-type button {
   bottom: 0.5em;
 }
 
-main section:first-of-type button:hover {
+.index main section:first-of-type button:hover {
   background-color: var(--hightlight-color);
   color: var(--tekst-color);
   transition: 1s;
@@ -477,34 +432,30 @@ main section:first-of-type button:hover {
 /* Tweede Section */
 /******************/
 
-section:nth-of-type(2) {
-
-  top: 100%;
-  left: 0;
-  right: 0;
+.index section:nth-of-type(2) {
   width: 100%;
   margin: 0 auto;
   padding: 1em;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
-  background-color: #1D1D1D;
+  background-color: var(--main-color);
   max-width: 60em;
 
 }
 
 @media (max-width: 781px) {
-  section:nth-of-type(2) {
+  .index section:nth-of-type(2) {
     grid-template-columns: 1fr;
   }
 }
 
-section:nth-of-type(2) article {
+.index section:nth-of-type(2) article {
   position: relative;
   margin: auto;
 }
 
-section:nth-of-type(2) h1 {
+.index section:nth-of-type(2) h1 {
   font-size: 3em;
   text-shadow: 2px 2px var(--shadow-color);
   text-align: center;
@@ -512,13 +463,13 @@ section:nth-of-type(2) h1 {
   grid-column-end: -1;
 }
 
-section:nth-of-type(2) article h3 {
+.index section:nth-of-type(2) article h3 {
   font-size: 1em;
   text-shadow: 2px 2px var(--shadow-color);
 
 }
 
-section:nth-of-type(2) article img {
+.index section:nth-of-type(2) article img {
   width: 50px;
   height: auto;
   margin: 0.5em;
@@ -526,7 +477,7 @@ section:nth-of-type(2) article img {
   right: 0;
 }
 
-section:nth-of-type(2) article div {
+.index section:nth-of-type(2) article div {
   display: flex;
 }
 
@@ -534,7 +485,7 @@ section:nth-of-type(2) article div {
 /* Derde Section */
 /******************/
 
-section:nth-of-type(3) {
+.index section:nth-of-type(3) {
   width: 100vw;
   position: relative;
   left: 0;
@@ -549,23 +500,23 @@ section:nth-of-type(3) {
   min-height: 50vh;
 }
 
-section:nth-of-type(3) div {
+.index section:nth-of-type(3) div {
   position: absolute;
 }
 
-section:nth-of-type(3) video {
+.index section:nth-of-type(3) video {
   width: 100%;
   height: 50%;
 }
 
-section:nth-of-type(3) h1 {
+.index section:nth-of-type(3) h1 {
   font-size: 2em;
   text-transform: uppercase;
   font-weight: bold;
   margin: 10px;
 }
 
-section:nth-of-type(3) h2 {
+.index section:nth-of-type(3) h2 {
   font-size: 1em;
   text-transform: uppercase;
   font-weight: bold;
@@ -611,7 +562,7 @@ footer article:first-of-type a {
   width: 50%;
 }
 
-footer article:first-of-type a:hover:not(.active) {
+footer article:first-of-type a:hover {
   background-color: var(--hightlight-color);
 
 }
@@ -628,12 +579,7 @@ footer a {
   text-transform: uppercase;
 }
 
-footer a.active {
-  font-weight: bold;
-  cursor: default;
-}
-
-footer a:hover:not(.active) {
+footer a:hover {
   background-color: white;
   color: var(--hightlight-color);
 }
@@ -650,3 +596,246 @@ footer img {
 /******************/
 /* 2E PAGINA */
 /******************/
+
+/******************/
+/* HEADER / NAVIGATIE */
+/******************/
+
+.klantenservice header {
+  background-color: var(--main-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding-left: 3em;
+  padding-right: 5em;
+
+}
+
+/******************/
+/* ZOEK FORMULIER */
+/******************/
+form {
+  position: relative;
+  padding: .75em;
+  background-color: #151515;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+  margin: 1em;
+  max-width: 100%;
+  margin-top: 9em;
+}
+
+form input {
+  width: 0;
+  flex-grow: 1;
+}
+
+input,
+button {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  font: inherit;
+}
+
+form input {
+  min-width: 12em;
+  max-width: 38em;
+  line-height: 2em;
+  padding: 0.6em;
+
+}
+
+form button {
+  line-height: 2em;
+  padding: 0.5em;
+  padding-left: 1.2em;
+  padding-right: 1.2em;
+  background-color: var(--secondary-color);
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #438f37;
+
+}
+
+form img {
+  display: inline-block;
+  position: absolute;
+  right: 10em;
+  bottom: -5.4em;
+  clip-path: inset(0px 5px 88px 0px);
+  height: 300px;
+}
+
+@media (max-width: 1260px) {
+  form img {
+    display: none;
+  }
+
+  form {
+    background-color: var(--main-color);
+    margin-top: 1em;
+    justify-content: center;
+  }
+
+}
+
+/******************/
+/* De lijsten */
+/******************/
+
+.klantenservice main section:first-of-type {
+  margin: 0.5em;
+  max-width: 100%;
+}
+
+.klantenservice main section:first-of-type ul:first-of-type {
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+}
+
+@media (max-width: 640px) {
+  .klantenservice main section:first-of-type ul:first-of-type {
+    grid-template-columns: 1fr;
+  }
+}
+
+.klantenservice main section:first-of-type ul li {
+  margin: 0;
+  padding: 0;
+  background-color: #242424;
+  height: 200px;
+  position: relative;
+  background-image: none;
+  border: solid 1px #707070;
+  list-style-type: none;
+}
+
+.klantenservice main section:first-of-type ul li h3 {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 0.8em;
+  background-color: var(--hightlight-color);
+  text-align: center;
+  text-transform: none;
+}
+
+.klantenservice main section:first-of-type ul li a {
+  margin: 1em;
+  text-decoration: none;
+  outline: none;
+  color: var(--tekst-color);
+  display: block;
+  text-transform: none;
+  border-bottom: 1px solid #707070;
+
+}
+
+.klantenservice main section:first-of-type ul li a:hover {
+  color: var(--hightlight-color);
+}
+
+.klantenservice main section:first-of-type ul li a:focus {
+  text-decoration: underline;
+}
+
+/******************/
+/* Chat hulp */
+/******************/
+
+.klantenservice #chaticoon {
+  position: fixed;
+  right: 0.2em;
+  bottom: 0.5em;
+  width: 5.8em;
+  height: auto;
+  z-index: 1;
+}
+
+.klantenservice section:nth-of-type(2) article {
+  width: 420px;
+  height: 640px;
+  border-radius: 5px;
+  background-color: #F2F2F2;
+  position: relative;
+}
+
+.klantenservice section:nth-of-type(2) article div {
+  background-color: white;
+  margin: 1em;
+}
+
+.klantenservice section:nth-of-type(2) article img {
+  width: 2em;
+  height: auto;
+  margin-right: 0.5em;
+}
+
+.klantenservice section:nth-of-type(2) article h4 {
+  display: flex;
+  align-items: center;
+  background-color: var(--hightlight-color);
+  border-radius: 5px;
+  padding: 1em;
+}
+
+.klantenservice section:nth-of-type(2) article h5 {
+  font-size: 1.2em;
+  color: var(--main-color);
+  padding: 1em;
+  padding-bottom: 0;
+}
+
+.klantenservice section:nth-of-type(2) button {
+  background-color: var(--secondary-color);
+  color: var(--tekst-color);
+  line-height: 3.5em;
+  text-transform: none;
+  width: 100%;
+  border: solid 5px white;
+  display: flex;
+  align-items: center;
+}
+
+.klantenservice section:nth-of-type(2) button:hover {
+  background-color: var(--hightlight-color);
+  color: var(--tekst-color);
+  transition: 1s;
+}
+
+#chat {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  transition: 0.5s;
+  transform: translateX(-1000%)
+}
+
+#chat.zichtbaar {
+  transform: translateX(0%)
+}
+
+@media (max-width: 430px) {
+  .klantenservice section:nth-of-type(2) article {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    position: relative;
+  }
+}
